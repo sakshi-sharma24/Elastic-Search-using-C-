@@ -8,7 +8,7 @@ namespace ElasticSearchAssignment
 {
    public class Hotel
     {
-        public int ID
+        public string ID
         {
             get;
             set;
@@ -25,11 +25,15 @@ namespace ElasticSearchAssignment
             set;
         }
 
-        public Hotel(int id, string name, string country)
+        public Hotel(string id, string name, string country)
         {
             this.ID = id;
             this.Name = name;
             this.Country = country;
+        }
+        public Hotel()
+        {
+                
         }
     }
 }
